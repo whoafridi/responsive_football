@@ -1,0 +1,180 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: whitesmoke;
+}
+/* top  */
+.top{
+    display: flex;
+    background-color: #7C74DF;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.top img{
+    width: 90%;
+    transition: transform 0.2s ease-in-out;
+}
+.top img:hover{
+    transform: translate(-15px, -15px);
+}
+.image-section{
+    width: 100%;
+    padding: 20px;
+    margin: 30px;
+}
+.info{
+    width: 80%;
+    padding-left: 150px;
+}
+.info h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.button{
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: cornsilk;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.button:hover{
+    color: coral;
+}
+
+/* players  */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.container img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+article{
+    padding: 20px;
+    margin: 0 30px;
+    border: 4px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.artcle{
+    margin: 50px auto;
+    padding-left: 50px;
+}
+/* highlights css  */
+.highlights{
+    padding: 20px;
+    border: 4px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 50px auto;
+}
+.highlight-title{
+    text-align: center;
+    font-size: 30px;
+}
+/* scorecard css */
+.scorecard-info{
+    width: 40%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 10px 20px whitesmoke;
+}
+span{
+    color: gray;
+}
+/* footer style */
+footer img{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    margin:0 10px;
+    padding: 0 10px;
+}
+.icons i{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+footer p{
+    text-align: center;
+}
+/* media query  */
+@media only screen and (max-width: 688px) {
+    section{
+        width: 100%;
+        padding: 0 ;
+        margin: 0 ;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .info{
+        padding-left: 0px;
+    }
+    .info h1{
+        padding-top: 30px;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }   
+    .container img{
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    .artcle{
+        padding-left: 0px;
+    }
+    article{
+        padding: 25px;
+        margin: 0px 100px;
+        border: 4px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .image-section {
+        width: 100%;
+        padding: 0px;
+        margin: 20px;
+    }
+    .scorecard img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
